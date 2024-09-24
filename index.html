@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramamurthy Desu Naidu Resume</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Resume Section */
+        .resume-section {
+            padding: 50px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-section h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .resume-section h2 {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .resume-section p {
+            line-height: 1.8;
+            font-weight: 300;
+            color: #7f8c8d;
+        }
+
+        /* Contact Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-content h2 {
+            color: #e74c3c;
+        }
+
+        .modal-content .linkedin-link {
+            color: white;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .modal-content .linkedin-link:hover {
+            background-color: #e74c3c;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #e74c3c;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar, count 2 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#resume">My Resume</a></li>
+            <li><a href="#" id="contact-link">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Resume Section count 5-6 -->
+    <section id="resume" class="resume-section">
+        <h1>Ramamurthy Desu Naidu</h1>
+        <p>Kuala Lumpur, 55300 | +60183181066 | <a href="mailto:ramamurthy.work@gmail.com">ramamurthy.work@gmail.com</a></p>
+        <h2>QA Engineer | Software Tester | Technical Support</h2>
+        <p>
+            As a jovial QA Engineer with an eye for detail, I excel in pinpointing subtle discrepancies that ensure software excellence. My easy-going nature, combined with a knack for clear communication, allows for effective collaboration with both clients and managers, facilitating swift and amicable resolutions to complex issues.
+        </p>
+
+        <h2>Experience</h2>
+        <h3>QA Engineer | CIS IT SOLUTIONS | Apr 2023 - Present | Kuala Lumpur</h3>
+        <ul>
+            <li>Formulate and execute detailed test cases in accordance with manual testing procedures.</li>
+            <li>Develop and maintain automation test cases, ensuring their integration into Jenkins, and apply Selenium IDE as a secondary method for executing automation testing.</li>
+            <li>Conduct rigorous manual testing under conditions of peak load to verify smooth operation and website stability during high traffic periods.</li>
+            <li>Systematically log bugs and issues within project management tools like Jira or ClickUp, aligning with SCRUM and Agile methodologies for trackability and resolution.</li>
+            <li>Collaborate closely with clients to procure the latest requirements and recommend system enhancements.</li>
+            <li>Ensure the accuracy and currency of website manual documentation, liaising with clients to validate information.</li>
+        </ul>
+
+        <h3>Lead Manual Software Tester & OTT Monitoring | TwoSnap Sdn Berhad | Mar 2023 - Apr 2023 | Kuala Lumpur</h3>
+        <ul>
+            <li>Leading and managing a team of night shift manual software testers & OTT Monitors.</li>
+            <li>Developing and executing test plans, test cases, and test scripts, and assigning test runs.</li>
+            <li>Monitoring and analysing OTT Team's performance.</li>
+            <li>Identifying and resolving software defects and reporting performance metrics to stakeholders.</li>
+        </ul>
+
+        <h3>Manual Software Tester & OTT Monitoring | TwoSnap Sdn Berhad | Dec 2022 - Mar 2023 | Kuala Lumpur</h3>
+        <ul>
+            <li>Create detailed, comprehensive, and well-structured test plans and test cases using TestRail.</li>
+            <li>Estimate, prioritize, plan, and coordinate testing activities.</li>
+            <li>Identify, record, document, and track bugs through JIRA. Perform thorough regression testing when bugs are resolved.</li>
+            <li>Develop and apply testing processes for new and existing products to meet client needs.</li>
+            <li>Investigate the causes of non-conforming software and train users to implement solutions.</li>
+            <li>Monitor streaming services for performance, stability, and availability via Conviva.</li>
+            <li>Monitor customer feedback for any issues related to streaming services and generate reports for C-level managers and HODs.</li>
+        </ul>
+
+        <h3>Technical Support Executive | Concentrix CVG Malaysia | Oct 2021 - Oct 2022 | Kuala Lumpur</h3>
+        <ul>
+            <li>Provide technical support and troubleshooting assistance for Dell products.</li>
+            <li>Diagnose and resolve software and hardware issues.</li>
+            <li>Track customer interactions, provide follow-up, and escalate unresolved technical problems.</li>
+            <li>Maintain a comprehensive knowledge of Dell products.</li>
+        </ul>
+
+        <h3>IT Enterprise Customer Operations | Maxis Broadband Berhad | May 2021 - Oct 2021 | Kuala Lumpur</h3>
+        <ul>
+            <li>Perform Data Entries and CRM Component assignment in Portal, One Business Hub & KENAN.</li>
+            <li>Provide technical support for customers on an as-needed basis.</li>
+            <li>Work closely with internal teams to identify areas of improvement in service delivery.</li>
+        </ul>
+
+        <h3>Data Analyst | Team Selangor Student | Jun 2019 - Jan 2021 | Kuala Lumpur</h3>
+        <ul>
+            <li>Collect and analyze data related to student performance, progress, and outcomes.</li>
+            <li>Create reports on student performance indicators including enrollment trends, retention rates, and graduation rates.</li>
+        </ul>
+
+        <h3>Technical Support Executive | Aegis BPO Malaysia | Mar 2018 - Apr 2019 | Kuala Lumpur</h3>
+        <ul>
+            <li>Provide technical support to customers via phone and email.</li>
+            <li>Troubleshoot customer inquiries related to their Celcom services.</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p><strong>BSc (Hons) E-Business Technology & Management</strong><br>Liverpool John Moores University, Kuala Lumpur, Malaysia</p>
+        <p><strong>Diploma in Business Administration</strong><br>FTMS International College, Kuala Lumpur, Malaysia</p>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, HTML, SQL</li>
+            <li>Microsoft Office (Word, Excel, PowerPoint), Microsoft Access</li>
+            <li>Power BI, TestRail, Jira, Selenium IDE</li>
+        </ul>
+
+        <h2>Personal Projects</h2>
+        <h3>Clock In and Clock Out Time Tracker Extension</h3>
+        <p>Yep, it’s exactly what it sounds like! A time-tracking extension based on the Google Sheets API and manifest that makes tracking your work hours just as easy as clocking in and out with a smile! 💼</p>
+
+        <h3>Customer Service ChatBot</h3>
+        <p>Meet my charming bot! Powered by the Google Gemini API and trained using my very own Google Sheet. It’s super bougie and ready to serve up some top-notch customer support with flair. 🤖💬</p>
+
+        <h3>Customer Management System</h3>
+        <p>Add, delete, edit existing members, because let’s face it—remembering a huge list of people is not our strong suit. This system ensures you never have to try remembering anyone’s name ever again! 🎯👨‍💼</p>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>Google IT Support (2022), Coursera</li>
+        </ul>
+    </section>
+
+    <!-- Contact Modal, count 1 -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/devopsengram" target="_blank" class="linkedin-link">LinkedIn Profile</a>
+        </div>
+    </div>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById("contact-modal");
+
+        // Get the contact link that opens the modal
+        var contactLink = document.getElementById("contact-link");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the contact link, open the modal
+        contactLink.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it so there is kanfusinnnngg
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
